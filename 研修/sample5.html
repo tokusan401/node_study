@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>ＴＯＰ画面</title>
+    <!-- <script>
+        'use strict';
+
+        document.addEventListener('DOMContentLoaded', function(){
+            const myForm = document.getElementById('form');
+
+            myForm.addEventListener('submit', function(event){
+                event.preventDefault();
+
+                const formData = new FormData(myForm);
+
+                formData.set('paramName', '山田山野介');
+
+                const url = 'sample1.html?' + new URLSearchParams(formData).toString();
+
+                window.location.href = url;
+            })
+        })
+
+        document.addEventListener('DOMContentLoaded', function(){
+            const myForm = document.getElementById('form');
+
+            myForm.addEventListener('submit', function(event){
+                event.preventDefault();
+
+                const formData = new FormData(myForm);
+
+                formData.set('paramName', '山田山野介');
+                formData.set('paramName1', '10000')
+
+                const url = 'sample1.html?' + new URLSearchParams(formData).toString();
+
+                window.location.href = url;
+            })
+        })
+    </script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="main_title">
+            <!-- <div class="sub_title">
+                <h3>コーユービジネス</h3>
+                <p>ログイン日時:2022年12月XX日　16:10:15　ADMINISTOR(管理者) <button>✖ログアウト</button></p>
+            </div> -->
+            <div class="sub_title">
+                <h3>コーユービジネス</h3>
+                <div class="sub_title_logout">
+                    <p>ログイン日時:2022年12月XX日　16:10:15　ADMINISTOR(管理者)</p>
+                    <form action="" method="GET">
+                        <button>✖ログアウト</button>
+                    </form>
+                </div>
+            </div>
+            <div class="issues">
+                <h3>案件情報照会/登録<button class="button_a">新規</button><button class="button_b">修正</button></h3>
+                <form>
+                    <!-- <label for="issues_name">案件名称:</label> -->
+                    <input type="text" name="issues_name" placeholder="案件名称:">
+                    <button>引用</button>
+                    <button>リピート</button>
+                </form>
+             </div>
+        </div>
+        <div class="main">
+            <div class="main_menu">
+                <div class="sub_main">
+                    <p>Content</p>
+                    <ul>
+                        <li>基本情報　　　　　<a href="#section1">▶</a></li>
+                        <li>実行計画　　　　　<a href="#section2">▶</a></li>
+                        <li>見積　　　　　　　<a href="#section3">▶</a></li>
+                        <li>契約　　　　　　　<a href="#section4">▶</a></li>
+                        <li>受注・発注／失注　<a href="#section5">▶</a></li>
+                        <li>全体スケジュール　<a href="#section6">▶</a></li>
+                        <li>出荷依頼　　　　　<a href="#section7">▶</a></li>
+                        <li>売上／立替　　　　<a href="#section8">▶</a></li>
+                        <li>請求　　　　　　　<a href="#section9">▶</a></li>
+                        <li><a href="index.html">ＴＯＰに戻る</a></li>
+                    </ul>
+                </div>
+                <div class="issues_information">
+                    <div class="basic_information">
+                    <h5 id="section1">基本情報</h5>
+                        <div class="basic_information_side">
+                            <p class="o">受注</p>
+                            <p class="g">承認済</p>
+                        </div>
+                    </div>
+                    <div class="basic_information_project">
+                        <div class="basic_information_project_a">
+                            <p>xxxxxxxxxxxxxxx</p>
+                        </div>
+                        <div class="basic_information_project_b">
+                            <form action="sample1.html" method="GET">
+                                <h6>次回案件No. : xxxxxxxxxxx</h6>
+                                <h6>前回案件No. : xxxxxxxxxxx<button>履歴</button></h6>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="projectname">
+                        <form action="sample1.html" id="form" method="get">
+                            <table border="1">
+                                <tr>
+                                    <th rowspan="2">案件名称</th>
+                                    <td id="output" colspan="9"></td>
+                                    <th class="jurisdiction" rowspan="4">管轄</th>
+                                    <td colspan="9">開発営業部</td>                              
+                                </tr>
+                                <tr>
+                                    <td colspan="9"></td>
+                                    <th class="jurisdiction">部門長</th>
+                                    <td colspan="8">南さん</td>
+                                </tr>
+                                <tr>
+                                    <th>案件グループ</th>
+                                    <td colspan="4"></td>
+                                    <th>客先注文No.</th>
+                                    <td colspan="4">80000</td>
+                                    <th class="jurisdiction">チームL</th>
+                                    <td colspan="8">正野さん</td>
+                                </tr>
+                                <tr>
+                                    <th>大分類</th>
+                                    <td id="output1" colspan="2"></td>
+                                    <th>中分類</th>
+                                    <td colspan="2">20000</td>
+                                    <th>小分類</th>
+                                    <td colspan="3"></td>
+                                    <th class="jurisdiction">営業担当</th>
+                                    <td colspan="2">正野さん</td>
+                                    <td colspan="2">xxxx年xx月～</td>
+                                    <th class="jurisdiction">前任</th>
+                                    <td colspan="3">●●さん　　　　　　<button>履歴</button></form>
+                                </tr>
+                                <tr>
+                                    <th>得意先</th>
+                                    <td>xxxxxxxx</td>
+                                    <td colspan="3">あああああああ</td>
+                                    <th>担当者</th>
+                                    <td colspan="4"></td>
+                                    <th class="temporary">仮登録</th>
+                                    <td class="temporary" colspan="5"></td>
+                                    <td class="temporary" colspan="2"></td>
+                                </tr>
+                                <tr>
+                                    <th>エンドユーザー</th>
+                                    <td>xxxxxxxx</td>
+                                    <td colspan="3">いいいいいいいいい</td>
+                                    <th>担当者</th>
+                                    <td colspan="4"></td>
+                                    <th class="temporary">仮登録</th>
+                                    <td class="temporary" colspan="5"></td>
+                                    <td class="temporary" colspan="4"></td>
+                                </tr>
+                                <tr>
+                                    <th>リース先</th>
+                                    <td>xxxxxxxx</td>
+                                    <td colspan="3">うううううううう</td>
+                                    <th>担当者</th>
+                                    <td colspan="4"></td>
+                                    <th class="temporary">仮登録</th>
+                                    <td class="temporary" colspan="5"></td>
+                                    <td class="temporary" colspan="4"></td>
+                                </tr>
+                                <tr>
+                                    <th>請求先</th>
+                                    <td>xxxxxxxx</td>
+                                    <td colspan="3">かかかかかかかかか</td>
+                                    <th>担当者</th>
+                                    <td colspan="4"></td>
+                                    <th class="temporary">仮登録</th>
+                                    <td class="temporary" colspan="5"></td>
+                                    <td class="temporary" colspan="4"></td>
+                                </tr>
+                                <tr>
+                                    <th>引合日</th>
+                                    <td>xxxx/xx/xx</td>
+                                    <th>発注（予定）日</th>
+                                    <td>xxxx/xx/xx</td>
+                                    <th>決定確度</th>
+                                    <td colspan="5">A(80~100%)</td>
+                                    <th rowspan="2">検索のための<br>Keyword</th>
+                                    <td rowspan="2" colspan="7"></td>
+                                </tr>
+                                <tr>
+                                    <th>受注日</th>
+                                    <td colspan="1">xxxx/xx/xx</td>
+                                    <td colspan="8"></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="1">受注数量</th>
+                                    <td colspan="1">　</td>
+                                    <th colspan="1">単位</th>
+                                    <td colspan="1">　</td>
+                                    <th colspan="1">単価</th>
+                                    <td colspan="1">　</td> 
+                                    <th colspan="1">金額</th>
+                                    <td colspan="3">１２３４５６７</td>
+                                    <th rowspan="2">営業メモ</th>
+                                    <td rowspan="2" colspan="7"></td>
+                                </tr>
+                                <tr>
+                                    <th>希望納期</th>
+                                    <td>xxxx/xx/xx</td>
+                                    <th>納期前出荷</th>
+                                    <td>不可</td>
+                                </tr>
+                            </table>
+                            <div class="projectname_update clearfix">                            
+                            <button type="submit">編集する</button>
+                        </form> 
+                    </div>
+                    <div class="planning">
+                        <div class="planning_execution">
+                            <h5 id="section2">実行計画</h5>
+                        </div>
+                        <div class="color">
+                            <h5 class="red">※ 実行計画はまだ設定されていません。</h5>
+                            <form action="sample2.html" method="GET"><button type="submit">新規設定</button></form> 
+                        </div>
+                        <div class="planning_execution">
+                            <h5 id="section3">見積</h5>
+                        </div>
+                        <div class="color">
+                            <h5 class="red">※ 実行計画はまだ設定されていません。</h5>
+                            <form action="sample3.html" method="GET"><button type="submit">新規設定</button></form>
+                        </div>
+                        <div class="planning_execution">
+                            <h5 id="section4">契約</h5>                            
+                        </div>
+                        <div class="color">
+                            <h5 class="red">※ 実行計画はまだ設定されていません。</h5>
+                            <form action="sample4.html" method="GET"><button type="submit">新規設定</button></form>
+                        </div>
+                        <div class="planning_execution">
+                            <h5 id="section5">受注・発注/失注</h5>
+                        </div>
+                        <div class="color">
+                            <h5 class="red">※ 実行計画はまだ設定されていません。</h5>
+                            <button>新規設定</button>
+                        </div>
+                        <div class="planning_execution">
+                            <h5 id="section6">全体スケジュール</h5>
+                        </div>
+                        <div class="color">
+                            <h5 class="red">※ 実行計画はまだ設定されていません。</h5>
+                            <button>新規設定</button>
+                        </div>
+                        <div class="planning_execution">
+                            <h5 id="section7">出荷依頼</h5>
+                        </div>
+                        <div class="color">
+                            <h5 class="red">※ 実行計画はまだ設定されていません。</h5>
+                            <button>新規設定</button>
+                        </div>
+                        <div class="planning_execution">
+                            <h5 id="section8">売上/立替</h5>
+                        </div>
+                        <div class="color">
+                            <h5 class="red">※ 実行計画はまだ設定されていません。</h5>
+                            <button>新規設定</button>
+                        </div>
+                        <div class="planning_execution">
+                            <h5 id="section9">請求</h5>
+                        </div>
+                        <div class="color">
+                            <h5 class="red">※ 実行計画はまだ設定されていません。</h5>
+                            <button>新規設定</button>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(location.search);
+  document.getElementsByName("address")[0].value = params.get("address");
+  document.getElementsByName("Billing_address")[0].value = params.get("Billing_address")
+  document.getElementsByName("order")[0].value = params.get("order")
+});
+
+    </script>     -->
+    <!-- <script>
+        'use strict';
+
+        document.getElementById('form').onsubmit = function(event){
+            event.preventDefault();
+            document.getElementById('output').textContent = '山田山野介';
+            document.getElementById('output1').textContent = '10000';
+        }
+    </script> -->
+</body>
+</html>

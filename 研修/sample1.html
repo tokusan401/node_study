@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>基本情報編集</title>
+    <script>
+        'use strict';
+
+        // document.addEventListener('DOMContentLoaded', function(){
+        //     // 現在のURLからクエリパラメータを取得
+        //     const queryString = window.location.search;
+        //     const urlParams = new URLSearchParams(queryString);
+
+        //     // paramNameクエリパラメータの値を取得
+        //     const paramNameValue = urlParams.get('paramName');
+
+        //     // HTML上の要素に表示
+        //     const outputElement = document.getElementById('output');
+        //     if (outputElement) {
+        //         outputElement.textContent = paramNameValue;
+        //     }
+        // });
+
+        // document.addEventListener('DOMContentLoaded', function(){
+        //     // 現在のURLからクエリパラメータを取得
+        //     const queryString = window.location.search;
+        //     const urlParams = new URLSearchParams(queryString);
+
+        //     // paramNameクエリパラメータの値を取得
+        //     const paramNameValue = urlParams.get('paramName');
+        //     const paramName1Value = urlParams.get('paramName1');
+
+        //     // HTML上の要素に表示
+        //     const outputElement = document.getElementById('output');
+        //     if (outputElement) {
+        //         outputElement.textContent = paramNameValue;
+        //     }
+
+        //     const outputElement1 = document.getElementById('output1');
+        //     if (outputElement1) {
+        //         outputElement1.textContent = paramName1Value;
+        //     }
+        // });
+        
+    //     document.addEventListener('DOMContentLoaded', function(){
+    //         const queryString = window.location.search;
+    //         const URLSearchParams = new URLSearchParams(queryString);
+    //         const paramNameValue = URLSearchParams.get('paramName');
+
+    //         const outputElement = document.getElementById('output');
+    //         if (outputElement) {
+    //             outputElement.textContent = paramNameValue;
+    //         }
+    // });
+
+        // document.addEventListener('DOMContentLoaded', function(){
+        //     const URLSearchParams = new URLSearchParams(window.location.search);
+        //     const paramNameValue = URLSearchParams.get('paramName');
+
+        //     const outputElement = document.getElementById('output');
+        //     outputElement.textContent = paramNameValue;
+        // });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="main_title">
+            <!-- <div class="sub_title">
+                <h3>コーユービジネス</h3>
+                <p>ログイン日時:2022年12月XX日　16:10:15　ADMINISTOR(管理者) <button>✖ログアウト</button></p>
+            </div> -->
+            <div class="sub_title">
+                <h3>コーユービジネス</h3>
+                <div class="sub_title_logout">
+                    <p>ログイン日時:2022年12月XX日　16:10:15　ADMINISTOR(管理者)</p>
+                    <form action="" method="GET">
+                        <button>✖ログアウト</button>
+                    </form>
+                </div>
+            </div>
+            <div class="issues">
+                <h3>案件情報登録(基本)<button class="button_a">新規</button><button class="button_b">修正</button></h3>
+                <form>
+                    <input type="text" name="issues_name" placeholder="案件名称:">
+                    <button type="submit">引用</button>
+                    <button type="submit">リピート</button>
+                </form>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_menu">
+                <div class="sub_main">
+                    <p>Content</p>
+                    <ul>
+                        <li>基本情報　　　　　<a href="sample5.html">▶</a></li>
+                        <li>実行計画　　　　　<a href="sample2.html">▶</a></li>
+                        <li>見積　　　　　　　<a href="sample3.html">▶</a></li>
+                        <li>契約　　　　　　　<a href="sample4.html">▶</a></li>
+                        <li>受注・発注／失注　<a href="#section5">▶</a></li>
+                        <li>全体スケジュール　<a href="#section6">▶</a></li>
+                        <li>出荷依頼　　　　　<a href="#section7">▶</a></li>
+                        <li>売上／立替　　　　<a href="#section8">▶</a></li>
+                        <li>請求　　　　　　　<a href="#section9">▶</a></li>
+                        <li><a href="index.html">ＴＯＰに戻る</a></li>
+                    </ul>
+                </div>
+                <div class="issues_information">
+                    <div class="basic_information">
+                    <h5 id="section1">基本情報</h5>
+                        <!-- <div class="basic_information_side">
+                            <p>受注</p>
+                            <p>承認済</p>
+                        </div> -->
+                    </div>
+                    <div class="basic_information_project">
+                        <div class="basic_information_project_a">
+                            <p>xxxxxxxxxxxxxxx</p>
+                        </div>
+                        <div class="basic_information_project_b">
+                            <form action="" method="GET">
+                                <h6>次回案件No. : xxxxxxxxxxx</h6>
+                                <h6>前回案件No. : xxxxxxxxxxx<button>履歴</button></h6>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="project_title">
+                        <table border="1">
+                            <tr> 
+                                <th rowspan="1">案件名称</th>
+                                <td id="output"></td>
+                            </tr>                            
+                            <tr>
+                                <th>案件グループ</th>
+                                <td colspan="8">00000000</td>
+                            </tr>
+                            <tr>
+                                <th>大分類</th>
+                                <td id="output1" colspan="1"></td>
+                                <th>中分類</th>
+                                <td colspan="1">20000</td>
+                                <th>小分類</th>
+                                <td colspan="1">30000</td>
+                                <th>客先注文No</th>
+                                <td colspan="1">80000</td>
+                            </tr>
+                            <tr>
+                                <th>状況</th>
+                                <td colspan="8">〇引合　〇見積中　〇失注　〇先行着手　●受注　〇中止　〇完了</td>
+                            </tr>
+                        </table>
+                        <div class="project_title_a">
+                            <div class="project_title_button">
+                                <p>承認を申請する</p>
+                                <div class="project_title_button_1">
+                                    <form action="" method="GET">
+                                        <button>クリア</button>
+                                    </form>
+                                    <form action="sample5.html" method="GET">
+                                        <button type="submit">登録する</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <table border="1">
+                            <tr>
+                                <th class="wi">得意先</th>
+                                <td colspan="3">　　　　　</td>
+                                <th class="wi2">得意先名称</th>
+                                <td class="wi_2" colspan="4">　　　　　　　　　　</td>
+                                <th class="orange">仮登録</th>
+                                <td colspan="8">　　　　　　　　　　　　</td>
+                            </tr>
+                            <tr>
+                                <th class="wi">得意先担当者</th>
+                                <td colspan="4"></td>
+                                <td colspan="4">　　　　　　　　　　</td>
+                                <th class="orange">仮登録</th>
+                                <td colspan="8"></td>
+                            </tr>
+                            <tr>
+                                <th class="wi">エンドユーザー</th>
+                                <td colspan="3">　　　　　</td>
+                                <th class="wi2">エンドユーザー名称</th>
+                                <td class="wi_2" colspan="4">　　　　　　　　　　</td>
+                                <th class="orange">仮登録</th>
+                                <td colspan="8">　　　　　　　　　　　　</td>
+                            </tr>
+                            <tr>
+                                <th class="wi">エンドユーザー担当者</th>
+                                <td colspan="4"></td>
+                                <td colspan="4">　　　　　　　　　　</td>
+                                <th class="orange">仮登録</th>
+                                <td colspan="8"></td>
+                            </tr>
+                            <tr>
+                                <th class="wi">リース先</th>
+                                <td colspan="3">　　　　　</td>
+                                <th class="wi2">リース先名称</th>
+                                <td class="wi_2" colspan="4">　　　　　　　　　　</td>
+                                <th class="orange">仮登録</th>
+                                <td colspan="8">　　　　　　　　　　　　</td>
+                            </tr>
+                            <tr>
+                                <th class="wi">リース先担当者</th>
+                                <td colspan="4"></td>
+                                <td colspan="4">　　　　　　　　　　</td>
+                                <th class="orange">仮登録</th>
+                                <td colspan="8"></td>
+                            </tr>
+                            <tr>
+                                <th class="wi">請求先</th>
+                                <td colspan="3"></td>
+                                <th class="wi2">請求先名称</th>
+                                <td class="wi_2" colspan="4">　　　　　　　　　　</td>
+                                <th class="orange">仮登録</th>
+                                <td colspan="8">　　　　　　　　　　　　</td>
+                            </tr>
+                            <tr>
+                                <th class="wi">請求先担当者</th>
+                                <td colspan="4"></td>
+                                <td colspan="4">　　　　　　　　　　</td>
+                                <th class="orange">仮登録</th>
+                                <td colspan="8"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="day">
+                        <table border="1">
+                            <tr>
+                                <th>引合日</th>
+                                <td>yyyy/mm/dd</td>
+                                <th>受注(予定)日</th>
+                                <td>yyyy/mm/dd</td>
+                                <th>決定確度</th>
+                                <td colspan="3">A(80~100%)</td>
+                            </tr>
+                            <tr>
+                                <th>希望納期</th>
+                                <td>yyyy/mm/dd</td>
+                                <th>納期前出荷</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>受注数量</th>
+                                <td>1111</td>
+                                <th>単位</th>
+                                <td>1111</td>
+                                <th>単価</th>
+                                <td>111111</td>
+                                <th>金額</th>
+                                <td>111111</td>
+                            </tr>
+                            <tr>
+                                <th>営業担当者</th>
+                                <td>　　　　</td>
+                                <th class="o">営業</th>
+                                <td class="o" colspan="2">　　　　</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="key">
+                        <table border="1">
+                            <tr>
+                              <th rowspan="4" colspan="1">検索の為のKeyword</th>
+                              <td rowspan="4" colspan="3">　　　　　　　　　　　　　　　<br><br><br><br></td>
+                              <th rowspan="4" colspan="1">営業メモ</th>
+                              <td rowspan="4" colspan="3">　　　　　　　　　　　　　　　<br><br><br><br></td>
+                            </tr>
+                          </table>                          
+                    </div>
+                    <div class="delete">
+                        <form action="" method="GET">
+                            <button type="submit" class="delete-button">削除する</button>
+                        </form>
+                        <ul>
+                            <li class="b">関連書類等のファイルを添付する</li>
+                            <li class="o">承認申請を取り下げる</li>
+                            <li class="g">承認を申請する</li>
+                            <li><form action="" method="GET"><button>クリア</button></form></li>
+                            <li><form action="sample5.html" method="GET"><button type="submit">登録する</button></form></li>
+                        </ul>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

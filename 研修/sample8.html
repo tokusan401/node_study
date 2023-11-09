@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>案件情報一覧照会</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main_title">
+            <div class="sub_title">
+                <h3>コーユービジネス</h3>
+                <p>ログイン日時:2022年12月XX日　16:10:15　ADMINISTOR(管理者)</p>
+            </div>
+            <div class="issues">
+                <h3>案件情報一覧照会</h3>
+            </div>
+        </div>
+        <div class="task">
+            <div class="list_main">
+                <div class="list_title">
+                    <ul>
+                        <li>ＴＯＰ　　　　　　</li>
+                        <li>ＢＩツール　　　　</li>
+                        <li>販売管理　　　　　</li>
+                        <li>購買管理　　　　　</li>
+                        <li>営業支援　　　　　</li>
+                        <li>生産管理　　　　　</li>
+                        <li>Ｋ－ＶＳＳ管理　　</li>
+                        <li>ＢＰＯ管理　　　　</li>
+                        <li>物流管理　　　　　</li>
+                        <li>他システムとの連携</li>
+                        <li>お知らせ　　　　　</li>
+                        <li>ＦＡＱ管理　　　　</li>
+                        <li>お問い合わせ管理　</li>
+                        <!-- <li><a href="sample3.html">ＴＯＰに戻る</a></li> -->
+                    </ul>
+                </div>
+                <div class="search">
+                    <h6>検索条件を指定してください</h6>
+                    <form action="" method="get">
+                        <div class="project_name">
+                            <table>
+                                <tr>
+                                    <th>案件名</th>
+                                    <td><input type="text" name="project_name" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>案件CD</th>
+                                    <td><input type="text" name="project_name_cd" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>親案件名</th>
+                                    <td><input type="text" name="parent_project_name" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>親案件CD</th>
+                                    <td><input type="text" name="parent_project_cd" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>第二階層</th>
+                                    <td><select name="second_level">
+                                        <option value="" disabled selected>複数指定可</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>第三階層</th>
+                                    <td><select name="third_level">
+                                        <option value="" disabled selected>複数指定可</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>関連工場</th>
+                                    <td><select name="related_factory">
+                                        <option value="" disabled selected>複数指定可</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>関連SC</th>
+                                    <td><select name="related_sc">
+                                        <option value="" disabled selected>複数指定可</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>関連倉庫</th>
+                                    <td><select name="related_warehouse">
+                                        <option value="" disabled selected>複数指定可</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>大分類</th>
+                                    <td><input type="text" name="major_category" size="1">～<input type="text" name="major_category" size="1"></td>
+                                </tr>
+                                <tr>
+                                    <th>中分類</th>
+                                    <td><input type="text" name="subcategory" size="1">～<input type="text" name="subcategory" size="1"></td>
+                                </tr>
+                                <tr>
+                                    <th>小分類</th>
+                                    <td><input type="text" name="subclassification" size="1">～<input type="text" name="subclassification" size="1"></td>
+                                </tr>
+                                <tr>
+                                    <th>商品名</th>
+                                    <td><input type="text" name="product_name" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>商品CD</th>
+                                    <td><input type="text" name="product_cd" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>客先注文No</th>
+                                    <td><input type="text" name="customer_order_number" placeholder="部分一致" size="10"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="customer_name">
+                            <table>
+                                <tr>
+                                    <th>得意先名</th>
+                                    <td><input type="text" name="customer_name" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>得意先CD</th>
+                                    <td><input type="text" name="customer_name_cd" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>エンドユーザー名</th>
+                                    <td><input type="text" name="enduser_name" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>統括法人名</th>
+                                    <td><input type="text" name="parent_company_name" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>業種</th>
+                                    <td><select name="industry">
+                                        <option value="" disabled selected>複数指定可</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>仕入先名</th>
+                                    <td><input type="text" name="supplier" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>仕入先CD</th>
+                                    <td><input type="text" name="supplier_cd" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>外注先名</th>
+                                    <td><input type="text" name="vendor" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>外注先CD</th>
+                                    <td><input type="text" name="vendor_cd" placeholder="部分一致" size="10"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="situation">
+                            <table>
+                                <tr>
+                                    <th rowspan="2">状況</th>
+                                    <td class="checkbox_out"><input type="checkbox" name="condition" value="status">商談中
+                                        <input type="checkbox" name="condition" value="status">受注
+                                        <input type="checkbox" name="condition" value="status">完了
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox_out"><input type="checkbox" name="condition" value="status">中止
+                                        <input type="checkbox" name="condition" value="status">失注
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>引合日</th>
+                                    <td><input type="text" name="quotation_date" size="1">～<input type="text" name="quotation_date" size="1"></td>
+                                </tr>
+                                <tr>
+                                    <th>確度</th>
+                                    <td class="situation_width"><select name="accuracy">
+                                        <option value="" disabled selected>　　</option>
+                                    </select>
+                                    ～<select name="accuracy"><option value="" disabled selected>　　</option></select>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <th>受注予定日</th>
+                                    <td><input type="text" name="delivery_date" size="1">～<input type="text" name="delivery_date" size="1"></td>
+                                </tr>
+                                <tr>
+                                    <th>受注日</th>
+                                    <td><input type="text" name="order_date" size="1">～<input type="text" name="order_date" size="1"></td>
+                                </tr>
+                                <tr>
+                                    <th>受注金額</th>
+                                    <td><input type="text" name="order_amount" size="2"><select name="amount">
+                                        <option value="" disabled selected>以上</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <th>売上金額</th>
+                                    <td><input type="text" name="sales_amount" size="2"><select name="amount">
+                                        <option value="" disabled selected>以上</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">状態</th>
+                                    <td class="checkbox_out">
+                                        <input type="checkbox" name="state" value="circumstance">要注意！
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox_out">
+                                        <input type="checkbox" name="state" value="circumstance">重点管理対象
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="department">
+                            <table>
+                                <tr>
+                                    <th>管轄部門</th>
+                                    <td><select name="division">
+                                        <option value="" disabled selected>　　　　　　</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>グループ</th>
+                                    <td><select name="group">
+                                        <option value="" disabled selected>　　　　　　</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>チーム</th>
+                                    <td><select name="team">
+                                        <option value="" disabled selected>　　　　　　</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>営業担当</th>
+                                    <td><input type="text" name="salesperson" placeholder="部分一致" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="6">Keyword</th>
+                                    <td><textarea name="word" rows="6"></textarea></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="display">
+                            <button type="submit">クリア</button>
+                            <button type="submit">表示する</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="item_count">
+                    <div class="item_count_record">
+                        <div class="record">
+                            <p>発生件数: z,zzz9件</p>
+                            <p>⇐ XX件～XX件 ⇒</p>
+                            <button>並べ替える</button>
+                            <button>CSVデータを出力する</button>
+                        </div>
+                        <div class="record_new">
+                            <button type="submit">新規</button>
+                        </div>
+                    </div>
+                    <div class="item_count_record_table">
+                        <h6>【z,zzz9件】</h6>
+                        <div class="item_count_record_table_no">
+                            <table border="1">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">案件No.</th>
+                                        <th rowspan="2">案件名称</th>
+                                        <th rowspan="2">得意先名称</th>
+                                        <th rowspan="2">状況</th>
+                                        <th rowspan="2">営業担当</th>
+                                        <th rowspan="2">受注（予定）日</th>
+                                        <th rowspan="2">確度</th>
+                                        <th rowspan="2">見積金額</th>
+                                        <th rowspan="2">受注金額</th>
+                                        <th rowspan="2">受注数量</th>
+                                        <th class="black">売上</th>
+                                        <th class="yellow" colspan="2">原価</th>
+                                        <th class="pink" colspan="2">売上粗利</th>
+                                    </tr>                                
+                                    <tr>
+                                        <th>実績</th>
+                                        <th>実績</th>
+                                        <th>標準</th>
+                                        <th>実績</th>
+                                        <th>粗利率</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">xxxxxxxx</td>
+                                        <td rowspan="2">品川区役所予診票</td>
+                                        <td rowspan="2" colspan="2">完了</td>
+                                        <td rowspan="2">ユキコちゃん</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2">9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td>9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(9,800)</td>                                    
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">xxxxxxxx</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2" colspan="2">商談中</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2">9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td>9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(9,800)</td>                                
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">xxxxxxxx</td>
+                                        <td rowspan="2">品川区役所予診票</td>
+                                        <td rowspan="2" colspan="2">完了</td>
+                                        <td rowspan="2">ユキコちゃん</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2">9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td>9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(9,800)</td>                                    
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">xxxxxxxx</td>
+                                        <td rowspan="2">品川区役所予診票</td>
+                                        <td rowspan="2" colspan="2">完了</td>
+                                        <td rowspan="2">ユキコちゃん</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2">9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td>9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(9,800)</td>                                    
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">xxxxxxxx</td>
+                                        <td rowspan="2">品川区役所予診票</td>
+                                        <td rowspan="2" colspan="2">完了</td>
+                                        <td rowspan="2">ユキコちゃん</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2">9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td>9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(9,800)</td>                                    
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">xxxxxxxx</td>
+                                        <td rowspan="2">品川区役所予診票</td>
+                                        <td rowspan="2" colspan="2">完了</td>
+                                        <td rowspan="2">ユキコちゃん</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2">9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td>9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(9,800)</td>                                    
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">xxxxxxxx</td>
+                                        <td rowspan="2">品川区役所予診票</td>
+                                        <td rowspan="2" colspan="2">完了</td>
+                                        <td rowspan="2">ユキコちゃん</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2">9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td>9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(9,800)</td>                                    
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">xxxxxxxx</td>
+                                        <td rowspan="2">品川区役所予診票</td>
+                                        <td rowspan="2" colspan="2">完了</td>
+                                        <td rowspan="2">ユキコちゃん</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2">9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td>9,999</td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                        <td rowspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(9,800)</td>                                    
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>実行計画</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main_title">
+            <!-- <div class="sub_title">
+                <h3>コーユービジネス</h3>
+                <p>ログイン日時:2022年12月XX日　16:10:15　ADMINISTOR(管理者) <button>✖ログアウト</button></p>
+            </div> -->
+            <div class="sub_title">
+                <h3>コーユービジネス</h3>
+                <div class="sub_title_logout">
+                    <p>ログイン日時:2022年12月XX日　16:10:15　ADMINISTOR(管理者)</p>
+                    <form action="" method="GET">
+                        <button>✖ログアウト</button>
+                    </form>
+                </div>
+            </div>
+            <div class="issues_plan">
+                <div class="issues">
+                    <h3>案件情報登録(実行計画)<button class="button_a">新規</button><button class="button_b">修正</button></h3>
+                    <form>
+                        <input type="text" name="issues_name" placeholder="案件名称:">
+                        <button type="submit">引用</button>
+                        <button type="submit">リピート</button>
+                    </form>
+                    <button>受注</button><button>承認</button>
+                </div>
+                <div class="plan">
+                    <p>XXXXXXXXXXXX</p>
+                    <h3>得意先A</h3>
+                    <h3>品川区役所予診票</h3>
+                </div>                                
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_menu">
+                <div class="sub_main">
+                    <p>Content</p>
+                    <ul>
+                        <li>基本情報　　　　　<a href="sample5.html">▶</a></li>
+                        <li>実行計画　　　　　<a href="#section2">▶</a></li>
+                        <li>見積　　　　　　　<a href="sample3.html">▶</a></li>
+                        <li>契約　　　　　　　<a href="sample4.html">▶</a></li>
+                        <li>受注・発注／失注　<a href="#section5">▶</a></li>
+                        <li>全体スケジュール　<a href="#section6">▶</a></li>
+                        <li>出荷依頼　　　　　<a href="#section7">▶</a></li>
+                        <li>売上／立替　　　　<a href="#section8">▶</a></li>
+                        <li>請求　　　　　　　<a href="#section9">▶</a></li>
+                        <li><a href="index.html">ＴＯＰに戻る</a></li>
+                    </ul>
+                </div>
+                <div class="issues_information">
+                    <div class="basic_information">
+                    <h5 id="section2">実行計画</h5>
+                        <!-- <div class="basic_information_side">
+                            <p>受注</p>
+                            <p>承認済</p>
+                        </div> -->
+                    </div>
+                    <!-- <div class="basic_information_project">
+                        <div class="basic_information_project_a">
+                            <p>xxxxxxxxxxxxxxx</p>
+                        </div>
+                        <div class="basic_information_project_b">
+                            <h6>次回案件No. : xxxxxxxxxxx</h6>
+                            <h6>前回案件No. : xxxxxxxxxxx<button>履歴</button></h6>
+                        </div>
+                    </div> -->
+                    <div class="execution_plan">
+                        <table border="1">
+                            <tr>
+                                <th></th>
+                                <th>受注金額</th>
+                                <th>売上</th>
+                                <th>数量</th>
+                                <th>単位</th>
+                                <th>実行予算</th>
+                                <th>標準原価</th>
+                                <th>売上粗利</th>
+                                <th>粗利率</th>
+                                <th>菅販費</th>
+                                <th>営業利益</th>
+                                <th>営業損益</th>
+                                <th>特別損益</th>
+                                <th>経常利益</th>
+                            </tr>
+                            <tr>
+                                <th class="pink">予定</th>
+                                <td class="white">100,000</td>
+                                <td class="white">100,000</td>
+                                <td class="white"></td>
+                                <td class="white"></td>
+                                <td class="white">70,000</td>
+                                <td>70,000</td>
+                                <td>30,000</td>
+                                <td>30.00%</td>
+                                <td></td>
+                                <td>30.00%</td>
+                                <td></td>
+                                <td></td>
+                                <td>30.00%</td>
+                            </tr>
+                            <tr>
+                                <th class="pink">見込</th>
+                                <td class="white">100,000</td>
+                                <td class="white">100,000</td>
+                                <td class="white"></td>
+                                <td></td>
+                                <td class="white">70,000</td>
+                                <td>70,000</td>
+                                <td>30,000</td>
+                                <td>30.00%</td>
+                                <td></td>
+                                <td>30.00%</td>
+                                <td></td>
+                                <td></td>
+                                <td>30.00%</td>
+                            </tr>
+                            <tr>
+                                <th>実績</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="execution_plan_second">
+                        <table border="1">
+                            <tr>
+                                <th>No.</th>
+                                <th>第二階層</th>
+                                <th>No.</th>
+                                <th colspan="2">作業・処理/仕様内容</th>
+                                <th>依頼先</th>
+                                <th>納品先</th>
+                                <th>計画日数</th>
+                                <th>工程順番</th>
+                                <th>売上(予定)</th>
+                                <th>実行予算</th>
+                                <th>標準原価</th>
+                                <th>粗利(予定)</th>
+                                <th>粗利率</th>
+                            </tr>
+                            <tr>
+                                <th>001</th>
+                                <td></td>
+                                <th>001</th>
+                                <td>　　　　　　　　</td>
+                                <td class="gray">詳<br>細</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="gray"></td>
+                                <td class="gray"></td>
+                                <td class="gray"></td>
+                            </tr>
+                            <tr>
+                                <th>002</th>
+                                <td></td>
+                                <th>001</th>
+                                <td>　　　　　　　　</td>
+                                <td class="gray">詳<br>細</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="gray"></td>
+                                <td class="gray"></td>
+                                <td class="gray"></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td></td>
+                                <th>002</th>
+                                <td>　　　　　　　　</td>
+                                <td class="gray">詳<br>細</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="gray"></td>
+                                <td class="gray"></td>
+                                <td class="gray"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="8"></td>
+                                <th>【合計】</th>
+                                <td class="beige"></td>
+                                <td class="beige"></td>
+                                <td class="beige"></td>
+                                <td class="beige"></td>
+                                <td class="beige"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="execution_plan_third">
+                        <table border="1">
+                            <tr>
+                                <th rowspan="3">他勘定振替</th>
+                                <th colspan="2">総額</th>
+                                <th class="gray" colspan="2">初月</th>
+                            </tr>
+                            <tr>
+                                <th class="gray">予定</th>
+                                <th class="gray">実績</th>
+                                <th class="gray">予定</th>
+                                <th class="gray">実績</th>
+                            </tr>
+                            <tr>
+                                <td>　　　　</td>
+                                <td>　　　　</td>
+                                <td class="white">　　　　</td>
+                                <td>　　　　</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">立替金</th>
+                                <th colspan="2">総額</th>
+                                <th class="gray" colspan="2">初月</th>
+                            </tr>
+                            <tr>
+                                <th class="gray">予定</th>
+                                <th class="gray">実績</th>
+                                <th class="gray">予定</th>
+                                <th class="gray">実績</th>
+                            </tr>
+                            <tr>
+                                <td>　　　　</td>
+                                <td>　　　　</td>
+                                <td class="white">　　　　</td>
+                                <td>　　　　</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">諸経費</th>
+                                <th colspan="2">総額</th>
+                                <th class="gray" colspan="2">初月</th>
+                            </tr>
+                            <tr>
+                                <th class="gray">予定</th>
+                                <th class="gray">実績</th>
+                                <th class="gray">予定</th>
+                                <th class="gray">実績</th>
+                            </tr>
+                            <tr>
+                                <td>　　　　</td>
+                                <td>　　　　</td>
+                                <td class="white">　　　　</td>
+                                <td>　　　　</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">管販費</th>
+                                <th colspan="2">総額</th>
+                                <th class="gray" colspan="2">初月</th>
+                            </tr>
+                            <tr>
+                                <th class="gray">予定</th>
+                                <th class="gray">実績</th>
+                                <th class="gray">予定</th>
+                                <th class="gray">実績</th>
+                            </tr>
+                            <tr>
+                                <td>　　　　</td>
+                                <td>　　　　</td>
+                                <td class="white">　　　　</td>
+                                <td>　　　　</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">その他</th>
+                                <th colspan="2">総額</th>
+                                <th class="gray" colspan="2">初月</th>
+                            </tr>
+                            <tr>
+                                <th class="gray">予定</th>
+                                <th class="gray">実績</th>
+                                <th class="gray">予定</th>
+                                <th class="gray">実績</th>
+                            </tr>
+                            <tr>
+                                <td>　　　　</td>
+                                <td>　　　　</td>
+                                <td class="white">　　　　</td>
+                                <td>　　　　</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delete">
+                        <form action="" method="GET">
+                            <button type="submit" class="delete-button">削除する</button>
+                        </form>
+                        <ul>
+                            <li class="b">関連書類等のファイルを添付する</li>
+                            <li class="o">承認申請を取り下げる</li>
+                            <li class="g">承認を申請する</li>
+                            <li><form action="" method="GET"><button type="submit">クリア</button></form></li>
+                            <li><form action="sample5.html" method="GET"><button type="submit">登録する</button></form></li>
+                        </ul>
+                    </div>                                    
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

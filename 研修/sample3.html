@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>見積</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main_title">
+            <div class="sub_title">
+                <h3>コーユービジネス</h3>
+                <div class="sub_title_logout">
+                    <p>ログイン日時:2022年12月XX日　16:10:15　ADMINISTOR(管理者)</p>
+                    <form action="" method="GET">
+                        <button>✖ログアウト</button>
+                    </form>
+                </div>
+            </div>
+            <div class="issues_plan">
+                <div class="issues">
+                    <h3>案件情報登録(実行計画)<button class="button_a">新規</button><button class="button_b">修正</button></h3>
+                    <form>
+                        <input type="text" name="issues_name" placeholder="案件名称:">
+                        <button type="submit">引用</button>
+                        <button type="submit">リピート</button>
+                    </form>
+                    <button>受注</button><button>承認</button>
+                </div>
+                <div class="plan">
+                    <p>XXXXXXXXXXXX</p>
+                    <h3>得意先A</h3>
+                    <h3>品川区役所予診票</h3>
+                </div>                                
+            </div>
+            <!-- <div class="issues">
+                <h3>案件情報登録(基本)<button class="button_a">新規</button><button class="button_b">修正</button></h3>
+                <form>
+                    <input type="text" name="issues_name" placeholder="案件名称:">
+                    <button type="submit">引用</button>
+                    <button type="submit">リピート</button>
+                </form>
+            </div> -->
+        </div>
+        <div class="main">
+            <div class="main_menu">
+                <div class="sub_main">
+                    <p>Content</p>
+                    <ul>
+                        <li>基本情報　　　　　<a href="sample5.html">▶</a></li>
+                        <li>実行計画　　　　　<a href="sample2.html">▶</a></li>
+                        <li>見積　　　　　　　<a href="#section3">▶</a></li>
+                        <li>契約　　　　　　　<a href="sample4.html">▶</a></li>
+                        <li>受注・発注／失注　<a href="#section5">▶</a></li>
+                        <li>全体スケジュール　<a href="#section6">▶</a></li>
+                        <li>出荷依頼　　　　　<a href="#section7">▶</a></li>
+                        <li>売上／立替　　　　<a href="#section8">▶</a></li>
+                        <li>請求　　　　　　　<a href="#section9">▶</a></li>
+                        <li><a href="index.html">ＴＯＰに戻る</a></li>
+                    </ul>
+                </div>
+                <div class="issues_information">
+                    <div class="basic_information">
+                    <h5 id="section3">見積</h5>
+                        <!-- <div class="basic_information_side">
+                            <p>受注</p>
+                            <p>承認済</p>
+                        </div> -->
+                    </div>
+                    <!-- <div class="basic_information_project">
+                        <div class="basic_information_project_a">
+                            <p>xxxxxxxxxxxxxxx</p>
+                        </div>
+                        <div class="basic_information_project_b">
+                            <h6>次回案件No. : xxxxxxxxxxx</h6>
+                            <h6>前回案件No. : xxxxxxxxxxx<button>履歴</button></h6>
+                        </div>
+                    </div> -->
+                    <div class="quotation">
+                        <form action="" method="GET">
+                            <label for="name">見積書No</label>
+                            <input type="text" id="name" name="name">
+                            <input type="submit" value="表示する">
+                        </form>
+                        <div class="quotation_a">
+                            <div class="quotation_button">
+                                <!-- <p>承認を申請する</p> -->
+                                <div class="quotation_button_1">
+                                    <p>承認申請中</p>
+                                    <form action="" method="GET">
+                                        <button type="submit">新規設定</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quotation_subject">
+                        <table border="1">
+                            <tr>
+                                <th>件名</th>
+                                <td colspan="7"></td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">宛先</th>
+                                <td colspan="4">●得意先　〇エンドユーザー　〇リース先　〇請求先　〇その他</td>
+                            </tr>
+                            <tr>
+                                <td colspan="8"></td>
+                                <td colspan="1">御中</td>
+                            </tr>
+                            <tr>
+                                <th>先方担当者</th>
+                                <td colspan="2">　　　　　</td>
+                                <td colspan="1">様</td>
+                                <td colspan="1">記載する</td>
+                            </tr>
+                            <tr>
+                                <th>見積金額</th>
+                                <td colspan="1"></td>
+                                <td colspan="1">又は</td>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <th>納入期日</th>
+                                <td colspan="4"></td>
+                            </tr>
+                            <tr>
+                                <th>納品場所</th>
+                                <td colspan="4"></td>
+                            </tr>
+                            <tr>
+                                <th>支払条件</th>
+                                <td colspan="4"></td>
+                            </tr>
+                        </table>
+                        <div class="quotation_subject_block">
+                            <p>見積書プレヴュー表示</p>
+                            <!-- <div class="quotation_subject_block_main"> -->
+                                <div>
+                                    <form action="" method="GET">
+                                        <button type="submit">履歴紹会</button>
+                                    </form>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <div class="quotation_subject_day">
+                        <table border="1">
+                            <tr>
+                                <th>見積作成日</th>
+                                <td>yyyy/mm/dd</td>
+                                <th>有効期限</th>
+                                <td>　　　　　</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">発行元</th>
+                                <th colspan="1">営業担当者</th>
+                                <td></td>
+                                <td colspan="2">　　　　　</td>
+                            </tr>
+                            <tr>
+                                <th colspan="1">承認者①</th>
+                                <td colspan="2">　　　　　</td>
+                                <th colspan="1">承認者②</th>
+                                <td colspan="1">　　</td>
+                                <td colspan="2">　　　　　</td>
+                                <th>承認者③</th>
+                                <td>　　</td>
+                                <td colspan="2">　　　　　</td>
+                            </tr>
+                            <tr>
+                                <th>状況</th>
+                                <td colspan="6">●採用　〇承認済　〇申請中　〇作成中　〇却下　〇不採用</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="clear">
+                        <form action="" method="GET">
+                            <button type="submit">クリア</button>
+                        </form>
+                    </div>
+                    <div class="item_name">
+                        <table border="1">
+                            <tr>
+                                <th>No.</th>
+                                <th>品名</th>
+                                <th>数章</th>
+                                <th colspan="2">単位</th>
+                                <th>単価</th>
+                                <th>金額</th>
+                                <th colspan="2">課税区分</th>
+                                <th colspan="2">税率</th>
+                                <th>実行予算</th>
+                                <th colspan="2">標準原価</th>
+                                <th>粗利(予定)</th>
+                                <th>粗利率</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>　　　　　</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td class="g">▼</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td  class="g">▼</td>
+                                <td>　　</td>
+                                <td  class="g">%</td>
+                                <td class="b">　　</td>
+                                <td class="b">　　</td>
+                                <td  class="g">計<br>算</td>
+                                <td class="b">　　</td>
+                                <td class="b">　　</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>　　　　　</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td class="g">▼</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td  class="g">▼</td>
+                                <td>　　</td>
+                                <td  class="g">%</td>
+                                <td class="b">　　</td>
+                                <td class="b">　　</td>
+                                <td  class="g">計<br>算</td>
+                                <td class="b">　　</td>
+                                <td class="b">　　</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>　　　　　</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td class="g">▼</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td  class="g">▼</td>
+                                <td>　　</td>
+                                <td  class="g">%</td>
+                                <td class="b">　　</td>
+                                <td class="b">　　</td>
+                                <td  class="g">計<br>算</td>
+                                <td class="b">　　</td>
+                                <td class="b">　　</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>　　　　　</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td class="g">▼</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td  class="g">▼</td>
+                                <td>　　</td>
+                                <td  class="g">%</td>
+                                <td class="b">　　</td>
+                                <td class="b">　　</td>
+                                <td  class="g">計<br>算</td>
+                                <td class="b">　　</td>
+                                <td class="b">　　</td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td>　　　　　</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td class="g">▼</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td>　　</td>
+                                <td  class="g">▼</td>
+                                <td>　　</td>
+                                <td  class="g">%</td>
+                                <td class="b">　　</td>
+                                <td class="b">　　</td>
+                                <td  class="g">計<br>算</td>
+                                <td class="b">　　</td>
+                                <td class="b">　　</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="clear">
+                        <form action="" method="GET">
+                            <button type="submit">クリア</button>
+                        </form>
+                    </div>
+                    <div class="comments">
+                        <table border="1">
+                            <tr>
+                                <th class="No">No.</th>
+                                <th>備考</th>
+                            </tr>
+                            <tr>
+                                <th class="No">1</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th class="No">2</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>  
+                    <div class="delete">
+                        <form action="" method="GET">
+                            <button type="submit" class="delete-button">削除する</button>
+                        </form>
+                        <ul>
+                            <!-- <li class="b">関連書類等のファイルを添付する</li> -->
+                            <li class="o">承認申請を取り下げる</li>
+                            <li class="g">承認を申請する</li>
+                            <li><form action="" method="GET"><button type="submit">CSVデータを出力する</button></form></li>
+                            <li><form action="" method="GET"><button type="submit">別見積書として登録する</button></form></li>
+                            <li><form action="sample5.html" method="GET"><button type="submit">登録する</button></form></li>
+                        </ul>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
