@@ -1,0 +1,1150 @@
+/* 全体 */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container{
+    margin: 40px auto;
+    max-width: 1100px;
+    box-sizing: border-box;
+    border: 2px solid navy;
+    /* background-color: navy; */
+}
+
+/* タイトル部分 */
+
+.main_title{
+    background-color: navy;
+}
+
+.sub_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(225, 226, 226);
+    margin: 0 10px;
+    height: 30px;
+}
+
+.sub_title button{
+    height: 18px;
+    font-size: 10px;
+    padding-bottom: 0 5px 3px 5px;
+}
+
+.sub_title h3{
+    color: #03a9f4;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.sub_title p{
+    font-size: 10px;
+    margin: 0;
+}
+
+.sub_title_logout{
+    display: inline-block;
+    align-items: center;
+}
+
+.sub_title_logout p, .sub_title_logout form {
+    display: inline;
+    margin-right: 2px; /* 要素間の間隔を設定（必要に応じて調整） */
+    align-items: center;
+}
+
+.issues label{
+    margin-right: 5px;
+}
+
+.issues h3{
+    margin: 5px 15px;
+    color: white;
+    font-size: 14px;
+}
+
+.issues h3, button{
+    display: inline-block;
+}
+
+.issues form{
+    display: inline-block;
+    margin: 3px 15px;
+    font-size: 12px;
+    color: white;
+    margin-right: 60px;
+}
+
+.issues .button_a{
+    margin-left: 25px;
+    align-items: center;
+    padding: 0 6px 13px;
+    height: 15px;
+    font-size: 10px;
+}
+
+.issues .button_b{
+    padding: 0 6px 13px;
+    height: 15px;
+    font-size: 10px;
+}
+
+.issues button{
+    padding: 0 6px 13px;
+    height: 15px;
+    font-size: 10px;
+}
+
+.issues input[name="issues_name"] {
+    height: 10px; /* この値を必要な高さに調整 */
+    margin: 0;
+}
+
+.issues_plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.issues{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    color: white;
+    margin-right: 40px;
+}
+
+.plan p, .plan h3 {
+    margin: 0; /* デフォルトのマージンを削除 */
+    font-size: 12px;
+}
+
+.plan h3{
+    margin-left: 20px;
+}
+
+
+/* メイン部分 */
+
+.main{
+    /* display: flex; */
+    border-top: 2px solid white;
+    background-color: navy;
+}
+
+.list{
+    /* display:flex; */
+    background-color: #080896;
+    border-top: 2px solid white;
+    padding-bottom: 15px;
+}
+
+.list_main{
+    display: flex;
+    /* background-color: #080896; */
+}
+
+.list_title{
+    /* margin-left: 12px; */
+    padding-left: 12px;
+    color: white;
+    width: 18%;
+    background-color: navy;
+}
+
+.list_title ul {
+    list-style-type: none; /* リストのマーカーを非表示にする */
+    padding: 0; /* リストの内側の余白をリセット */
+    margin: 5px 5px 0 0; /* リストの外側の余白をリセット */
+    border-right: 5px solid gray;
+    height: 240px;
+}
+
+.list_title ul li {
+    padding-left: 0; /* リストアイテムの内側の余白をリセット */
+    padding-top: 5px;
+    font-size: 11px;
+}
+
+.list_title ul li a{
+    color: white;
+}
+
+.main_menu{
+    display: flex;
+    background-color: white;
+    border: 10px solid #a6def8;
+    margin: 10px 0;
+}
+
+.item_count {
+    font-size: 10px;
+    margin-top: 25px;
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.record_new{
+    margin-right: 5px;
+}
+
+.item_count button{
+    height: 20px;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.item_count_record{
+    display: block;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.item_count_record_table h6{
+    text-align: right;
+    font-size: 10px;
+    margin: 0;
+}
+
+.item_count_record_table_no table{
+    width: 150%;
+    height: 100%;
+    border-collapse: collapse;
+    text-align: right;
+    position: relative;
+}
+
+.item_count_record_table_no table th{
+    text-align: center;
+    background-color: rgb(240, 239, 239);
+}
+
+.item_count_record_table_no thead {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.item_count_record_table_no th:nth-child(1),
+.item_count_record_table_no td:nth-child(1){
+    position: sticky;
+    left: -15px;
+    z-index: 0;
+    background-color: #f8f0a2;
+}
+ 
+.item_count_record_table_no th:nth-child(2),
+.item_count_record_table_no td:nth-child(2){
+    position: sticky;
+    left: 50px;
+    z-index: 1;
+    background-color: #f8f0a2;
+}
+
+
+.item_count_record_table_no{
+    margin-right: 10px;
+    overflow: scroll;
+    height: 200px;
+    max-width: 100%;
+}
+
+.item_count_record_table_no .black{
+    background-color: black;
+    color: white;
+}
+
+.item_count_record_table_no .yellow{
+    background-color: rgb(250, 250, 197);
+}
+
+.item_count_record_table_no .pink{
+    background-color: #FFDAB9;
+}
+
+/* サブメイン部分 */
+
+.sub_main{
+    width: 15%;
+}
+
+.sub_main ul{
+    font-size: 9px;
+    list-style-type: none;
+}
+
+.sub_main li{
+    margin: 15px 0;
+}
+
+.sub_main p{
+    font-size: 12px;
+    margin-left: 20px;
+    background-color: rgb(245, 242, 242);
+}
+
+/* 情報部分 */
+.search{
+    margin: 30px 20px;
+    border: 3px solid gray;
+}
+
+.display{
+    float: right;
+    margin: 15px 0;
+}
+
+.search h6{
+    margin: 15px 10px 10px 20px;
+}
+
+.search select{
+    width: 95px;
+}
+
+.search table{
+    text-align: left;
+    margin-left: 30px;
+    font-size: 10px;
+    border-collapse: collapse;
+    border: 2px solid rgb(109, 249, 249);
+    background-color: #cce9f6;
+}
+
+.search table td{
+    border: 2px solid rgb(109, 249, 249);
+}
+
+.search table th{
+    border: 2px solid rgb(109, 249, 249);
+}
+
+.search .project_name th{
+    padding-right: 27px;
+}
+
+.search .project_name table{
+    margin-bottom: 20px;
+}
+
+.department th{
+    padding-right: 35px;
+}
+
+.search form{
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.search form th, td{
+    font-size: 9px;
+}
+
+.search button{
+    text-align: end;
+    font-size: 10px;
+    height: 20px;
+}
+
+.search .customer_name table{
+    margin-bottom: 20px;
+}
+
+.search .situation table{
+    margin-bottom: 20px;
+}
+
+.search .situation table td{
+    margin: 0;
+    padding: 0;
+}
+
+.situation_width select{
+    width: 44px;
+}
+
+select {
+    font-size: 12px;
+}
+
+input[name="project_name"], input[name="project_name_cd"]{
+    font-size: 12px;
+}
+
+input[name="product_name"], input[name="product_cd"],
+input[name="customer_order_number"], input[name="customer_name"],
+input[name="customer_name_cd"], input[name="enduser_name"],
+input[name="parent_company_name"], input[name="supplier"],
+input[name="supplier_cd"], input[name="vendor"],
+input[name="vendor_cd"], input[name="salesperson"],
+input[name="parent_project_name"], input[name="parent_project_cd"]{
+    font-size: 12px;
+}
+
+select[name="amount"] {
+    height: 22px;
+    width: 45px;
+    font-size: 10px;
+}
+
+select[name="accuracy"]{
+    width: 42px;
+}
+
+textarea[name="word"]{
+    width: 90px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+.search .situation th{
+    padding-right: 27px;
+}
+
+.search .situation td{
+    padding-left: 5px;
+}
+
+.checkbox_out{
+    width: 100px;
+}
+
+.main_a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 15px;
+    background-color: #FFFAF0;
+    padding-bottom: 60px;
+}
+
+.main_b{
+    margin-left: 20px;
+    display: block;
+    margin-top: 65px;
+    text-align: center;
+    width: 25%;
+    flex: 1 0 20%;
+}
+
+.main_b p{
+    margin: 0;
+    font-size: 11px;
+    padding: 5px 5px;
+    border: 1px solid #D3D3D3;
+    background-color: #E8E8E8;
+    color: #505050;
+    border-radius: 4px;
+}
+
+.main_a .main_b,
+.main_a .main_1 {
+    /* width: 52%;  */
+    box-sizing: border-box;
+    margin: 0 1%; /* Adjust the margin as needed for spacing */
+}
+
+.main_b h3{
+    color: white;
+    background-color: #03a9f4;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.main_1{
+    margin-left: 20px;
+    display: block;
+    margin-top: 65px;
+    text-align: center;
+    width: 25%;
+    flex: 1 0 20%;
+}
+
+.main_1 p{
+    margin: 0;
+    font-size: 11px;
+    padding: 5px 5px;
+    max-width: 100%;
+    border: 1px solid #D3D3D3;
+    background-color: #E8E8E8;
+    color: #505050;
+    border-radius: 4px;
+}
+
+.main_1 h3{
+    color: white;
+    background-color: #03a9f4;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.main_a .text{
+    color: rgba(80, 80, 80, 0.3);
+}
+
+.main_a .red{
+    color: red;
+}
+
+.issues_information{
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+    margin: 0 15px;
+}
+
+.Company_Information{
+    width: 100%;
+    font-size: 12px;
+}
+
+.Company_Information td button{
+    text-align: right;
+}
+
+.Company_Information table{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 10px;
+    border-collapse: collapse;
+}
+
+.Company_Information .yellow{
+    background-color: #f8f0a2;
+}
+
+.Company_Information th{
+    background-color: rgb(191, 231, 252);
+}
+
+.basic_information{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 15px solid blue;
+}
+
+.basic_information h5{
+    margin: 11px 0 0 0;
+    /* border-bottom: 15px solid rgb(3, 3, 214); */
+    font-size: 12px;
+}
+
+.basic_information p{
+    font-size: 10px;
+}
+
+.basic_information_side p{
+    font-size: 10px;
+    display: inline-block;
+    align-items: center;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.basic_information_side .o{
+    background-color: rgb(245, 188, 81);
+    padding: 0 10px;
+    color: white;
+}
+
+.basic_information_side .g{
+    background-color: rgb(139, 253, 139);
+    padding: 0 10px;
+    color: white;
+}
+
+.basic_information_project{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.basic_information_project_a p{
+    font-size: 11px;
+    margin: 15px 0 0 0;
+   padding: 0;
+}
+.basic_information_project_b h6{
+    margin: 0;
+    font-size: 10px;
+}
+
+.basic_information_project_b button{
+    padding: 0;
+}
+
+.projectname{
+    width: 100%;
+    font-size: 10px;
+    /* display: flex;
+    justify-content: flex-end; */
+}
+
+/* .projectname_tabletop{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.project_title table{
+    width: 75%;
+    border-collapse: collapse;
+    height: 100%;
+}
+
+.project_title{
+    display: flex;  
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.project_title_button{
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.project_title_button_1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_title_button_1 button{
+    padding: 0;
+    margin: 5px 5px 0 5px;
+}
+
+.project_title_button p{
+    text-align: center;
+    background-color: rgb(208, 248, 208);
+}
+
+.project_title table th{
+    background-color: #03a9f4;
+}
+
+.customer{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.customer table{
+    margin-top: 15px;
+    width: 99%;
+    border-collapse: collapse;
+}
+
+.customer table th{
+    background-color: #03a9f4;
+}
+
+.customer table .wi{
+    width: 15%;
+}
+
+.customer table .wi2{
+    width: 14%;
+    background-color: rgb(253, 235, 201);
+}
+
+.customer table .wi_2{
+    background-color: rgb(253, 235, 201);
+}
+
+.customer table .orange {
+    background-color: rgb(249, 188, 162);
+}
+
+.day{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.day table{
+    width: 99%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.day th, .key th{
+    background-color: #03a9f4;
+}
+
+.day .o{
+    background-color: rgb(253, 235, 201);
+}
+
+.key table{
+    width: 99%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.key th{
+    width: 11%;
+}
+
+.key{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.projectname_update button{
+    float: right;
+    margin: 10px 0 0 0;
+}
+
+.delete {
+    display: flex;
+    align-items: center; /* 垂直方向の中央寄せ (オプション) */
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.delete p {
+    margin-right: 10px; /* テキストとリストアイテムの間隔を調整 (オプション) */
+}
+
+.delete ul {
+    list-style: none; /* リストスタイルを非表示にする */
+    padding: 0; /* リストの余白をゼロにする (オプション) */
+    display: flex;
+}
+
+.delete ul li {
+    margin-right: 10px; /* アイテム間の間隔を調整 (オプション) */
+}
+
+.delete .b{
+    background-color: #b9e2f4;
+    height: 20px;
+    font-size: 10px;
+    padding: 5px 10px 0;
+}
+
+.delete .o{
+    background-color: rgb(249, 238, 218);
+    height: 20px;
+    font-size: 10px;
+    padding: 5px 10px 0;
+}
+
+.delete .g{
+    background-color: rgb(221, 252, 221);
+    height: 20px;
+    font-size: 10px;
+    padding: 5px 10px 0;
+}
+
+.delete-button {
+    color: red;
+    /* 他のスタイルルールも追加できます */
+}
+
+
+/* th{
+    width: 12%;
+} */
+
+.projectname table{
+    width: 100%;
+    font-size: 10px;
+    border-collapse: collapse;
+}
+
+.projectname table th{
+    background-color: #c0e8fa;
+}
+
+.projectname .temporary{
+    background-color: #FFDAB9;
+}
+
+.projectname .jurisdiction{
+    background-color: #FFFFE0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.planning{
+    margin-bottom: 10px;
+}
+
+.planning_execution{
+    border-bottom: 15px solid blue;
+    margin-bottom: 15px;
+}
+
+.planning_execution h5{
+    margin: 0;
+}
+
+.planning p, table{
+    font-size: 10px;
+}
+
+.planning table{
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+.color{
+    display: flex;
+    justify-content: space-between;
+}
+
+.color .red{
+    margin: 0 0 0 20px;
+    color: red;
+    font-size: 11px;
+}
+
+.planning_execution h5{
+    font-size: 12px;
+}
+
+.planning .day{
+    background-color: rgb(225, 225, 225);
+}
+
+.planning .complaint{
+    background-color: rgb(250, 224, 229);
+}
+
+.planning .treatment{
+    background-color: #c0e8fa;
+}
+
+.record p{
+    display: inline-block;
+}
+
+.Objection p{
+    display: inline-block;
+}
+
+.execution_plan{
+    width: 100%;
+    border-bottom: solid 1px black;
+    padding-bottom: 15px;
+}
+
+.execution_plan table{
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background-color: rgb(231, 229, 229);
+    border: 1px solid rgba(40, 40, 252, 0.897);
+}
+
+.execution_plan table th{
+    text-align: center;
+}
+
+.execution_plan .pink{
+    background-color: rgb(247, 213, 218);
+}
+
+.execution_plan .white{
+    background-color: white;
+}
+
+.execution_plan_second table{
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.execution_plan_second th{
+    background-color: rgb(231, 229, 229);
+}
+
+.execution_plan_third{
+    width: 100%;
+}
+
+.execution_plan_third table{
+    width: 35%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.execution_plan_third th{
+    background-color: #b9e2f4;
+}
+
+.execution_plan_third .gray{
+    background-color: rgb(231, 229, 229);
+}
+
+.execution_plan_third .white{
+    background-color: white;
+}
+
+.execution_plan_third td{
+    background-color: rgb(231, 229, 229);
+}
+
+.execution_plan_second .beige{
+    background-color: rgb(244, 244, 216);
+}
+
+.execution_plan_second .gray{
+    background-color: rgb(231, 229, 229);
+}
+
+.quotation{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    /* padding-bottom: 15px; */
+}
+
+.quotation_button{
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.quotation_button_1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.quotation_button_1 button{
+    padding: 0;
+    margin: 0 0px 10px 45px;
+    font-size: 12px;
+}
+
+.quotation_button p{
+    margin: 12px 0 20px 0;
+}
+
+/* .quotation_a .quotation_button_1 form {
+    margin-top: 0;
+} */
+
+.quotation form{
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.quotation_subject{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.original{
+    margin-top: 8px;
+    margin-right: 14px;
+}
+
+.original form{
+    font-size: 10px;
+}
+
+.original_document form button[type="submit"]{
+    font-size: 10px;
+}
+
+.quotation_subject form{
+    margin-top: 10px;
+}
+
+.quotation_subject form label {
+    font-size: 10px; /* ラベルのテキストのフォントサイズを変更 */
+    margin: 10px 0 0 15px; /* ラベルの上下左右のマージンを変更 */
+}
+
+.quotation_subject form input[type="submit"] {
+    font-size: 10px; /* ボタンのテキストのフォントサイズを変更 */
+    margin: 0; /* ボタンの上下左右のマージンを変更 */
+}
+
+.document h6{
+    margin: 0;
+    margin-top: 10px;
+    background-color:  rgb(106, 170, 249);
+}
+
+.quotation_subject table{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    /* border: none; */
+}
+
+.quotation_subject table th{
+    background-color: #03a9f4;
+    width: 10%;
+}
+
+.quotation_subject .wi{
+    width: 60%;
+}
+
+
+
+.quotation_subject_day table{
+    margin-top: 15px;
+    border-collapse: collapse;
+    /* border: none; */
+    width: 100%;
+}
+
+.summary table{
+    margin-top: 15px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.summary th{
+    width: 15%;
+    background-color: #c0e8fa;
+}
+
+.quotation_subject_block {
+    display: flex;
+    /* align-items: center;  */
+    width: 30%;
+}
+
+.quotation_subject_block p {
+    font-size: 10px;
+    display: inline-block;
+    margin-top: 15px; /* テキストの余白をリセット */
+    margin-left: 30px;
+    height: 15px;
+    background-color: #d7e8f8;
+    border: 1px solid rgb(193, 249, 193);
+    padding: 2px;
+}
+
+.quotation_subject_block form {
+    margin: 0; /* form要素の余白をリセット */
+}
+
+.quotation_subject_block button {
+    font-size: 12px;
+    margin: 10px 5px 0;
+}
+
+.quotation_subject_day{
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    border-top: 1px solid black;
+}
+
+.quotation_subject_day table th{
+    background-color:  #03a9f4;
+}
+
+.clear{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.clear form button[type="submit"]{
+    font-size: 10px;
+    margin-right: 1px;
+}
+
+.item_name{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.item_name table{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    /* border: none; */
+}
+
+.item_name table th, .comments table th{
+    background-color: rgb(227, 225, 225);
+}
+
+.item_name td{
+    text-align: center;
+}
+
+.item_name .g{
+    background-color: rgb(227, 225, 225);
+}
+
+.item_name .b{
+    background-color: rgb(247, 247, 209);
+}
+
+.comments{
+    width: 100%;
+    /* border-bottom: 1px solid black;
+    padding-bottom: 15px; */
+    margin-bottom: 20px;
+}
+
+.comments table{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    /* border: none; */
+}
+
+.comments .No{
+    width: 5%;
+}
+
+.key_w table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.key_w th{
+    width: 11%;
+}
+
+.key_w{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.key_w th{
+    background-color: #03a9f4;
+}
